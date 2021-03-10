@@ -4,7 +4,7 @@ if (rangeSlider) {
 	noUiSlider.create(rangeSlider, {
 	start: [12800],
 	step: 100,
-	connect: true,
+	connect: false,
 	range: {
 		'min': [ 1500 ],
 		'max': [ 20000 ]
@@ -17,9 +17,6 @@ if (rangeSlider) {
 	rangeSlider.noUiSlider.on('update', function(values, handle){
 		inputs[handle].value = Math.round(values[handle]);
 	});
-
-	// const btnMinus = document.getElementById('minus');
-	// const btnPlus = document.getElementById('plus');
 }
 	
 

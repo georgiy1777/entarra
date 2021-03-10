@@ -28,6 +28,11 @@
   align-items: center;
   cursor: pointer;
 }
+.checkbox-item:hover .checkbox-label__image::before {
+  transition: box-shadow 0.3s ease 0s;
+  box-shadow: 0 0 7px #3ba5ff;
+}
+
 .checkbox-label__image::before {
   content: "";
   flex: 0 0 35px;
@@ -37,6 +42,7 @@
   margin-right: 25px;
   border-radius: 7px;
   box-shadow: 0 0 5px #fff;
+  transition: box-shadow 0.3s ease 0s;
 }
 .checkbox-label__image::after {
   content: "";
@@ -77,6 +83,7 @@
 .checkbox-item__info--icon {
   width: 30px;
   height: 30px;
+  transform: rotate(7deg);
 }
 .checkbox-item__info:hover {
   background-color: #1c1c1c;
