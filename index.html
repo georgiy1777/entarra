@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testovoe</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <h1 class="title">Входной взнос</h1>
+            <div class="main__inner">
+                <div class="left-box">
+                    <div class="left-box__item chip">
+                        <img class="chip-icon" src="img/casino.svg" alt="chip" >
+                        <div class="chip-info">
+                            <span class="chip-info__quantity">5/10</span>
+                            <p class="chip-info__text">ФЛ Холдем</p>
+                        </div>
+                    </div>
+                    <div class="left-box__item rangeslider">
+                        <div class="rangeslider-content">
+                            <span class="rangeslider-content__text">Доступно средсвт:</span>
+                            <input class="rangeslider-content__control" type="text" value="2609">
+                        </div>
+                        <div class="rangeslider-slider">
+                            <input class="rangeslider-slider__control" id="input-0" type="text"value="12800">
+                            <div class="rangeslider-slider__inner">
+                                <button class="rangeslider-slider__btn btn-minus" id="minus"></button>
+                                <div id="range-slider"></div>
+                                <button class="rangeslider-slider__btn btn-plus" id="plus"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-box__item buttons">
+                        <button class="left-box__buttons btn">Min</button>
+                        <button class="left-box__buttons btn">Max</button>
+                        <button class="left-box__buttons btn">Bank</button>
+                        <button class="left-box__buttons btn">1/2 Bank</button>
+                    </div>
+                    <div class="left-box__item info">
+                        <p class="info-text">Ваш входной взнос не может быть меньше суммы, с которой вы покинули 
+                            данный стол. Нажмите кнопку OK, чтобы продолжить, или подождите, когда пройдет время ограничения.   </p>
+                        <a class="info-link btn" href="#">Быстрая посадка и автодокупка <span class="info-link__arrow"><img src="img/right-arrow.svg" alt="right-arrow"></span></a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <div class="right-box__item">
+                        <div class="checkbox">
+                            <div class="checkbox-item checkbox-item__medium">
+                                <input class="checkbox-input__image" id="checkboxItemImage" type="checkbox" value="checkbox" checked>
+                                <label class="checkbox-label__image" for="checkboxItemImage"><span>Быстрая посадка</span></label>
+                            </div>
+                            <span class="checkbox-item__info">
+                                <img class="checkbox-item__info--icon"src="img/info.svg" alt="info">
+                            </span>
+                        </div>
+                        <div class="description">
+                            <div class="description-box">
+                                <p class="description-box__text">Автоматически <br> ставить на стол:</p>
+                                <input class="description-box__input" type="text" value="2">
+                                <p class="description-box__text uppercase">бб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box__item">
+                        <div class="checkbox">
+                            <div class="checkbox-item checkbox-item__small">
+                                <input class="checkbox-input__image" id="checkboxItemImage2" type="checkbox" value="checkbox" checked>
+                                <label class="checkbox-label__image" for="checkboxItemImage2"><span>Автодокупка</span></label>
+                            </div>
+                            <span class="checkbox-item__info">
+                                <img class="checkbox-item__info--icon"src="img/info.svg" alt="info">
+                            </span>
+                        </div>
+                        <div class="description">
+                            <div class="description__text">
+                                Я хочу пользоваться функцией <br> автоматической докупки и понимаю, что она будет
+                                автоматически пополнять мой счет для обеспечения заданого номера стека.
+                            </div>
+                            <div class="description-box">
+                                <p class="description-box__text">Если у меня меньше:</p>
+                                <input class="description-box__input" type="text" value="2">
+                                <p class="description-box__text uppercase">бб</p>
+                            </div>
+                            <div class="description-box">
+                                <p class="description-box__text">Автоматически докупать до:</p>
+                                <input class="description-box__input" type="text" value="2">
+                                <p class="description-box__text uppercase">бб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box__item">
+                        <div class="checkbox">
+                            <div class="checkbox-item checkbox-item__large">
+                                <input class="checkbox-input__image" id="checkboxItemImage3" type="checkbox" value="checkbox" checked>
+                                <label class="checkbox-label__image" for="checkboxItemImage3"><span>Сохранить настройки после выхода из приложения</span></label>
+                            </div>
+                            <span class="checkbox-item__info">
+                                <img class="checkbox-item__info--icon"src="img/info.svg" alt="info">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-box">
+                <button class="footer-box__btn btn">Ok</button>
+                <button class="footer-box__btn btn">Cashier</button>
+                <button class="footer-box__btn btn">Cancel</button>
+            </div>
+        </div>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.js'></script>
+	<script src="js/rangeslider.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import "normalize.css";
+@import "global.css";
+@import "range-slider.css";
+@import "checkbox-item.css";
+
+.main__inner {
+  display: flex;
+  padding: 0px 60px 20px 60px;
+  margin-bottom: 10px;
+}
+.title {
+  margin-left: 60px;
+  margin-top: 20px;
+  display: block;
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/*=========================left-box===================================*/
+
+.left-box {
+  border-right: 1px solid #0e0e0e;
+  width: 500px;
+  padding-top: 30px;
+  padding-right: 35px;
+}
+.chip {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  width: 450px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-dark);
+  border-radius: 5px;
+}
+.chip-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.chip-icon {
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+}
+.chip-info__quantity,
+.chip-info__text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+.buttons {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.left-box__buttons {
+  margin-right: 5px;
+  width: 110px;
+  padding: 13px 5px;
+}
+.left-box__buttons:last-child {
+  margin-right: 0;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info-text {
+  margin-bottom: 20px;
+  width: 480px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.info-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 460px;
+  padding: 13px 25px;
+  cursor: pointer;
+}
+.info-link__arrow {
+  margin-left: 20px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+/*=========================right-box===================================*/
+
+.right-box {
+  padding-left: 45px;
+  width: 500px;
+}
+.right-box__item:not(:last-child) {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0e0e0e;
+}
+.description__text {
+  margin-bottom: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.description-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.description-box:last-child {
+  margin-bottom: 0;
+}
+.description-box__text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: right;
+  line-height: 20px;
+}
+.description-box__input {
+  margin: 0 10px;
+  padding: 10px;
+  max-width: 85px;
+  border-radius: 8px;
+  border: 2px solid #b6b6b6;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-black);
+  text-align: right;
+  cursor: pointer;
+}
+
+/*=========================footer-box===================================*/
+
+.footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-box__btn {
+  margin-right: 5px;
+  width: 150px;
+  padding: 13px 15px;
+}

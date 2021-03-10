@@ -1,0 +1,137 @@
+.rangeslider {
+  margin-bottom: 25px;
+}
+.rangeslider-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.rangeslider-content__text {
+  margin-right: 5px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.rangeslider-content__control {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  background-color: transparent;
+  pointer-events: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-white);
+  width: 80px;
+}
+.rangeslider-slider {
+  display: flex;
+  align-items: center;
+}
+.rangeslider-slider__control {
+  margin-right: 20px;
+  padding: 5px 10px;
+  max-width: 125px;
+  border-radius: 5px;
+  border: 2px solid #b6b6b6;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--color-black);
+  text-align: right;
+  cursor: pointer;
+}
+.noUi-target {
+  margin: 0 20px;
+  padding-right: 35px;
+  border-radius: 10px;
+  width: 240px;
+  box-shadow: none;
+  background: #585858;
+  border: none;
+  border-top: 2px solid #1c1c1c;
+  border-bottom: 2px solid #505050;
+}
+.noUi-horizontal {
+  height: 8px;
+}
+.noUi-horizontal .noUi-handle {
+  left: 0;
+  top: -15px;
+  width: 35px;
+  height: 35px;
+}
+.noUi-handle {
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  background: repeating-radial-gradient(
+      circle at 50% 50%,
+      rgba(200, 200, 200, 0.2) 0%,
+      rgba(200, 200, 200, 0.2) 2%,
+      transparent 2%,
+      transparent 3%,
+      rgba(200, 200, 200, 0.2) 3%,
+      transparent 3%
+    ),
+    conic-gradient(
+      white 0%,
+      silver 10%,
+      white 35%,
+      silver 45%,
+      white 60%,
+      silver 70%,
+      white 80%,
+      silver 95%,
+      white 100%
+    );
+  box-shadow: 3px 5px 10px 0 rgb(0 0 0 / 40%);
+  cursor: default;
+}
+.noUi-handle::before {
+  display: none;
+}
+.noUi-handle::after {
+  display: none;
+}
+.noUi-handle:focus {
+  outline: none;
+}
+.rangeslider-slider__inner {
+  display: flex;
+  align-items: center;
+}
+.rangeslider-slider__btn {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+.btn-minus::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  left: 0;
+  background-image: url(../img/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.btn-plus::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

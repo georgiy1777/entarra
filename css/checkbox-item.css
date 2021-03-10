@@ -1,0 +1,86 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.checkbox-item {
+  margin-right: 10px;
+}
+.checkbox-item__medium {
+  width: 215px;
+}
+.checkbox-item__small {
+  width: 175px;
+}
+.checkbox-item__large {
+  width: 315px;
+}
+.checkbox-input__image {
+  display: none;
+}
+.checkbox-input__image:checked + .checkbox-label__image::after {
+  transition: background-image 0.3s ease 0s;
+  transform: scale(1);
+}
+.checkbox-label__image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox-label__image::before {
+  content: "";
+  flex: 0 0 35px;
+  align-self: center;
+  height: 35px;
+  background-color: var(--color-white);
+  margin-right: 25px;
+  border-radius: 7px;
+  box-shadow: 0 0 5px #fff;
+}
+.checkbox-label__image::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: 4px;
+  bottom: 2px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: scale(0);
+  transition: background-image 0.3s ease 0s;
+}
+.checkbox-label__image span {
+  display: inline-block;
+  color: var(--color-white);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.checkbox-item__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #282828;
+  border-radius: 50%;
+  border-top: 2px solid #505050;
+  border-bottom: 2px solid #1c1c1c;
+  transition: background-color 0.3s ease 0s;
+  cursor: pointer;
+}
+.checkbox-item__info--icon {
+  width: 30px;
+  height: 30px;
+}
+.checkbox-item__info:hover {
+  background-color: #1c1c1c;
+  border-top: 2px solid #1c1c1c;
+  border-bottom: 2px solid #505050;
+  transition: all 0.3s ease 0s;
+}
