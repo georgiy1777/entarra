@@ -17,6 +17,46 @@ if (rangeSlider) {
 	rangeSlider.noUiSlider.on('update', function(values, handle){
 		inputs[handle].value = Math.round(values[handle]);
 	});
-}
+
+
+	const setRangeSlider = (i, value) => {
+		let arr = [null, null];
+		arr[i] = value;
+		rangeSlider.noUiSlider.set(arr);
+	};
+
+	inputs.forEach((el, index) => {
+		el.addEventListener('change', (e) => {
+			setRangeSlider(index, e.currentTarget.value);
+		});
+	});
 	
+}
+
+const counter = function () {
+	const btns = document.querySelectorAll('.rangeslider-slider__btn');
+
+	btns.forEach(btn => {
+		btn.addEventListener('click', function () {
+
+			const direction = this.dataset.direction;
+			const inp = document.querySelector('.rangeslider-slider__control');
+			const currentValue = +inp.value;
+			let newValue;
+
+			if (direction === 'plus') {
+				newValue = currentValue + 100;
+			} else {
+				newValue = currentValue - 100 > 0 ? currentValue - 100 : 0;
+			}
+
+			inp.value = newValue;
+
+		})
+	})
+
+}
+
+counter();
+
 
